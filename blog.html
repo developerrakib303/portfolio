@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | MD RAKIBUZZAMAN</title>
+    <meta name="description" content="Insights on WordPress development, performance, and modern web practices." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">RAKIBUZZAMAN</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="primaryNav">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="contact.html">Hire Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-header reveal">
+        <h1>From The Keyboard</h1>
+        <p>My latest articles and insights on WordPress, performance, and building maintainable websites.</p>
+      </header>
+
+     <section class="section">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Featured Post</h2>
+          </header>
+          <div class="featured-post-card-modern reveal">
+            <a href="#" class="featured-post-image">
+              <img src="https://placehold.co/800x800/2dd4bf/020617?text=Core+Web+Vitals" alt="Featured blog post thumbnail">
+            </a>
+            <div class="featured-post-content">
+                <span class="category-tag">Performance</span>
+                <h3>Mastering Core Web Vitals for WordPress</h3>
+                <p>A deep dive into practical steps you can take to improve LCP, CLS, and INP without breaking your theme or relying on dozens of plugins. Boost your SEO and user experience today.</p>
+                <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Provide a quick AI summary of an article about Mastering Core Web Vitals for WordPress."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+          </div>
+          </div>
+      </section>
+
+      <section class="section" style="background: var(--surface);">
+        <div class="container">
+            <header class="section-header reveal">
+                <h2>My Favorite Development Tools</h2>
+                <p>A peek into the software and services that power my workflow.</p>
+            </header>
+            <div class="tech-stack-grid reveal">
+                <div class="skill-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+                <div class="skill-card"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+                <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                <div class="skill-card"><i class="fa-solid fa-terminal"></i><span>WP-CLI</span></div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+           <header class="section-header reveal">
+            <h2>Latest Posts</h2>
+          </header>
+          <div class="project-grid">
+            <article class="blog-card reveal">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Summarize an article about choosing high-quality WordPress plugins."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x420/ec4899/020617?text=Plugin+Quality" alt="Plugin quality article" />
+              <div class="blog-meta">
+                <h3>Choosing High‑Quality Plugins</h3>
+                <p>How to evaluate plugin health, performance, and security for long‑term projects.</p>
+                <a href="#" class="btn btn-secondary">Read More</a>
+              </div>
+            </article>
+            <article class="blog-card reveal">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Provide a quick AI analysis of an article about Headless WordPress."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x420/334155/e2e8f0?text=Headless" alt="Headless WordPress article" />
+              <div class="blog-meta">
+                <h3>Headless WordPress: When and Why</h3>
+                <p>Pros and cons of decoupling your frontend for performance and flexibility.</p>
+                <a href="#" class="btn btn-secondary">Read More</a>
+              </div>
+            </article>
+            <article class="blog-card reveal">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Explain the benefits of using ACF Blocks for WordPress content editors."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x420/1e293b/e2e8f0?text=ACF+Blocks" alt="ACF Blocks" />
+              <div class="blog-meta">
+                <h3>ACF Blocks for Editors</h3>
+                <p>Create reusable content blocks that empower teams and reduce regressions.</p>
+                <a href="#" class="btn btn-secondary">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> MD RAKIBUZZAMAN. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <div class="floating-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>✨ RAKIB AI</h4>
+                <p>Your AI-powered guide</p>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message agent">
+                    Hello! Ask me about MD RAKIBUZZAMAN's services or anything about WordPress.
+                </div>
+            </div>
+            <form class="chat-input-form" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <button class="widget-btn" id="chatBtn" aria-label="Open Chat"><i class="fa-solid fa-comments"></i></button>
+        <a href="https://wa.me/+8801629950303" target="_blank" class="widget-btn whatsapp" aria-label="Contact on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <div id="ai-modal" class="ai-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>AI Insights</h3>
+                </div>
+                <div id="ai-modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

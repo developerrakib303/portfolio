@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | MD RAKIBUZZAMAN</title>
+    <meta name="description" content="A selection of WordPress projects by MD RAKIBUZZAMAN, showcasing skills in theme development, plugin development, and e-commerce." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+     <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">RAKIBUZZAMAN</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="primaryNav">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="contact.html">Hire Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-header reveal">
+        <h1>My Digital Craft</h1>
+        <p>Here's a curated selection of my work. Each project is a story of a problem solved and a vision brought to life with code.</p>
+      </header>
+
+      <section class="section">
+        <div class="container">
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="Theme Development">Theme Development</button>
+                <button class="filter-btn" data-filter="WooCommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="Plugin Development">Plugin Development</button>
+            </div>
+
+          <div class="project-grid" id="projectGrid">
+            <div class="project-card reveal" 
+                data-title="Corporate Business Theme"
+                data-description="A fully custom WordPress theme for a corporate client, featuring a bespoke design, custom post types for services and team members, and a highly intuitive backend for easy content management."
+                data-image="https://placehold.co/1200x3000/2dd4bf/020617?text=Test+Image"
+                data-tags="Theme Development,PHP,ACF"
+                data-gallery="https://placehold.co/600x400/2dd4bf/020617?text=Slide+1|https://placehold.co/600x400/ec4899/020617?text=Slide+2|https://placehold.co/600x400/334155/e2e8f0?text=Slide+3">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Analyze the benefits of a custom Corporate Business Theme compared to a pre-built one."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Corporate+Theme" alt="Corporate Theme"/>
+              <div class="project-meta"><h3>Corporate Business Theme</h3><p>WordPress Theme</p></div>
+            </div>
+            <div class="project-card reveal"
+                data-title="Fashion Brand Store"
+                data-description="An elegant e-commerce store built with WooCommerce. Features include custom product pages, a streamlined checkout process, and integration with third-party inventory management systems."
+                data-image="https://placehold.co/1200x800/1e293b/e2e8f0?text=Fashion+Store+Screenshot"
+                data-tags="WooCommerce,E-commerce,API"
+                data-gallery="https://placehold.co/600x400/2dd4bf/020617?text=Gallery+1|https://placehold.co/600x400/ec4899/020617?text=Gallery+2">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Summarize the key features of a successful Fashion Brand e-commerce store."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Online+Store" alt="Fashion Store"/>
+              <div class="project-meta"><h3>Fashion Brand Store</h3><p>WooCommerce</p></div>
+            </div>
+            <div class="project-card reveal"
+                data-title="Custom Booking Plugin"
+                data-description="A purpose-built plugin for a travel agency, allowing users to book tours and activities directly on the website. Includes calendar management, payment gateway integration, and automated email notifications."
+                data-image="https://placehold.co/1200x800/1e293b/e2e8f0?text=Booking+Plugin+Screenshot"
+                data-tags="Plugin Development,PHP,Stripe API"
+                data-gallery="https://placehold.co/600x400/334155/e2e8f0?text=Shot+1|https://placehold.co/600x400/1e293b/e2e8f0?text=Shot+2|https://placehold.co/600x400/2dd4bf/020617?text=Shot+3|https://placehold.co/600x400/ec4899/020617?text=Shot+4">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Explain the advantages of a Custom Booking Plugin for a service-based business."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Booking+Plugin" alt="Booking Plugin"/>
+              <div class="project-meta"><h3>Custom Booking Plugin</h3><p>WordPress Plugin</p></div>
+            </div>
+            <div class="project-card reveal" 
+                data-title="Creative Agency Portfolio" 
+                data-description="A visually-driven portfolio website for a creative agency. The site uses advanced animations and a unique layout to showcase their work in a memorable way." 
+                data-image="https://placehold.co/1200x800/1e293b/e2e8f0?text=Portfolio+Screenshot" 
+                data-tags="Theme Development,JavaScript,GSAP" 
+                data-gallery="https://placehold.co/600x400/1e293b/e2e8f0?text=Example+1|https://placehold.co/600x400/2dd4bf/020617?text=Example+2">
+                <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="What makes a Creative Agency Portfolio website effective?"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+                <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Portfolio+Site" alt="Creative Portfolio"/>
+                <div class="project-meta"><h3>Creative Agency Portfolio</h3><p>WordPress Theme</p></div>
+            </div>
+            <div class="project-card reveal"
+                data-title="Real Estate Portal"
+                data-description="A comprehensive real estate portal with advanced search filters, agent profiles, and property submission forms. Built as a custom theme with extensive use of the WordPress REST API."
+                data-image="https://placehold.co/1200x800/1e293b/e2e8f0?text=Real+Estate+Screenshot"
+                data-tags="Theme Development,API,JavaScript"
+                data-gallery="https://placehold.co/600x400/ec4899/020617?text=Map+View|https://placehold.co/600x400/2dd4bf/020617?text=Listing+Page">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Summarize the technical challenges and solutions for a Real Estate Portal."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Real+Estate" alt="Real Estate Portal"/>
+              <div class="project-meta"><h3>Real Estate Portal</h3><p>WordPress Theme</p></div>
+            </div>
+            <div class="project-card reveal"
+                data-title="Subscription Box Service"
+                data-description="An e-commerce site for a monthly subscription box, using WooCommerce Subscriptions. Features a custom user dashboard for managing subscriptions and orders."
+                data-image="https://placehold.co/1200x800/1e293b/e2e8f0?text=Subscription+Box"
+                data-tags="WooCommerce,Plugin Development"
+                data-gallery="https://placehold.co/600x400/2dd4bf/020617?text=Product|https://placehold.co/600x400/ec4899/020617?text=Dashboard">
+              <button class="ai-popup-btn" aria-label="Get AI Insights" data-ai-prompt="Explain the value of a custom user dashboard for a Subscription Box Service."><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+              <img src="https://placehold.co/640x400/1e293b/e2e8f0?text=Subscription+Box" alt="Subscription Box"/>
+              <div class="project-meta"><h3>Subscription Box Service</h3><p>WooCommerce</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--surface);">
+          <div class="container">
+              <header class="section-header reveal">
+                  <h2>My Tech Stack</h2>
+                  <p>The tools and technologies I use to build robust and scalable web solutions.</p>
+              </header>
+              <div class="tech-stack-grid reveal">
+                  <div class="skill-card"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
+                  <div class="skill-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+                  <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                  <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                  <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                  <div class="skill-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+                  <div class="skill-card"><i class="fa-solid fa-cart-shopping"></i><span>WooCommerce</span></div>
+                  <div class="skill-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section">
+          <div class="container">
+              <header class="section-header reveal">
+                  <h2>What My Clients Say</h2>
+              </header>
+              <div class="swiper testimonial-carousel reveal">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <article class="testimonial-card">
+                              <p class="quote">"Rakibuzzaman is a top-tier developer. He took our vision and turned it into a high-performing, beautiful website. His attention to detail and communication skills are outstanding."</p>
+                              <div class="client-info">
+                                  <img src="https://placehold.co/64x64/1e293b/e2e8f0?text=JD" alt="Client photo">
+                                  <div>
+                                      <h4>John Doe</h4>
+                                      <span>CEO, Creative Solutions</span>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+                      <div class="swiper-slide">
+                           <article class="testimonial-card">
+                              <p class="quote">"Working with Rakibuzzaman on our custom plugin was a breeze. He understood our complex requirements and delivered a flawless product on time. Highly recommended!"</p>
+                              <div class="client-info">
+                                  <img src="https://placehold.co/64x64/1e293b/e2e8f0?text=JS" alt="Client photo">
+                                  <div>
+                                      <h4>Jane Smith</h4>
+                                      <span>Project Manager, Tech Innovations</span>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+                       <div class="swiper-slide">
+                           <article class="testimonial-card">
+                              <p class="quote">"Our e-commerce sales have increased significantly since Rakibuzzaman optimized our WooCommerce store. It's faster, more user-friendly, and simply works better. An absolute professional."</p>
+                              <div class="client-info">
+                                  <img src="https://placehold.co/64x64/1e293b/e2e8f0?text=MA" alt="Client photo">
+                                  <div>
+                                      <h4>Mike Anderson</h4>
+                                      <span>Owner, Fashion Brand</span>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+      </section>
+
+       <section class="section">
+        <div class="container">
+          <div class="cta-box reveal">
+            <div class="cta-content">
+              <h2>Let's Build Something Great Together</h2>
+              <p>Have an idea for a website, a custom feature, or need help with your existing WordPress site? I'd love to hear about it.</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="portfolio-modal" id="portfolioModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img src="" alt="Project screenshot" id="modalImage">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <ul class="tags" id="modalTags"></ul>
+                    <div class="modal-gallery" id="modalGallery">
+                      <div class="gallery-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> MD RAKIBUZZAMAN. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <div class="floating-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>✨ RAKIB AI</h4>
+                <p>Your AI-powered guide</p>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message agent">
+                    Hello! Ask me about MD RAKIBUZZAMAN's services or anything about WordPress.
+                </div>
+            </div>
+            <form class="chat-input-form" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <button class="widget-btn" id="chatBtn" aria-label="Open Chat"><i class="fa-solid fa-comments"></i></button>
+        <a href="https://wa.me/+8801629950303" target="_blank" class="widget-btn whatsapp" aria-label="Contact on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <div id="ai-modal" class="ai-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>AI Insights</h3>
+                </div>
+                <div id="ai-modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

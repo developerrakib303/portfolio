@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | MD RAKIBUZZAMAN</title>
+    <meta name="description" content="Learn about MD RAKIBUZZAMAN's journey, skills, and commitment to excellence in WordPress development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">RAKIBUZZAMAN</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="primaryNav">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="contact.html">Hire Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-header reveal">
+        <h1>About Me</h1>
+        <p>My journey, my skills, and my commitment to excellence in digital craftsmanship.</p>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid-two-about">
+            <div class="about-media reveal">
+              <img src="https://placehold.co/600x700/1e293b/e2e8f0?text=MD+RAKIBUZZAMAN" alt="MD Rakibuzzaman" />
+            </div>
+            <div class="about-content reveal">
+              <h3>Dedicated to Digital Craftsmanship</h3>
+              <p>I'm a dedicated WordPress developer with a strong focus on theme and plugin development. My professional journey began at <strong>TK Online IT</strong>, and for the last four years, I've been honing my skills as a key developer at <strong>Orbit Technology</strong>.</p>
+              <p>Beyond my full-time role, I'm an active freelancer on Upwork and have successfully delivered over 25 projects for a diverse range of clients. I am passionate about writing clean, efficient code and building digital solutions that are both powerful and user-friendly.</p>
+              <ul class="tags">
+                <li>WordPress</li><li>Theme Development</li><li>Plugin Development</li><li>PHP</li><li>JavaScript</li><li>WooCommerce</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-journey" style="background: var(--surface);">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>My Journey</h2>
+            <p>A timeline of my professional growth and key milestones.</p>
+          </header>
+          <div class="process-grid reveal">
+            <div class="process-step">
+              <div class="process-number">1</div>
+              <h4>Started at TK Online IT</h4>
+              <p>Began my professional career, building a strong foundation in web development fundamentals and client work.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-number">2</div>
+              <h4>Joined Orbit Technology</h4>
+              <p>Elevated my skills by working on complex projects and collaborating with a talented team for over four years.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-number">3</div>
+              <h4>25+ Successful Upwork Projects</h4>
+              <p>Achieved a significant milestone as a freelance developer, delivering quality solutions to clients worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+       <section class="section">
+        <div class="container">
+          <div class="cta-box reveal">
+            <div class="cta-content">
+              <h2>Interested in working together?</h2>
+              <p>I'm always open to new opportunities and collaborations. Let's create something amazing.</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> MD RAKIBUZZAMAN. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <div class="floating-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>✨ RAKIB AI</h4>
+                <p>Your AI-powered guide</p>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message agent">
+                    Hello! Ask me about MD RAKIBUZZAMAN's services or anything about WordPress.
+                </div>
+            </div>
+            <form class="chat-input-form" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <button class="widget-btn" id="chatBtn" aria-label="Open Chat"><i class="fa-solid fa-comments"></i></button>
+        <a href="https://wa.me/+8801629950303" target="_blank" class="widget-btn whatsapp" aria-label="Contact on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
